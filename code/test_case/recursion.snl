@@ -1,0 +1,10 @@
+
+program recursion
+	procedure f(integer d);
+	begin
+		write(d);
+		f(d + 1)
+	end
+begin
+	f(1)
+end

@@ -1,0 +1,15 @@
+
+program add
+    var integer n;
+	procedure f(integer d);
+	begin
+	    d := d + 1;
+	    if d < 100 then
+		    f(d)
+		fi
+	end
+begin
+    n := 1;
+	f(n);
+	write(n)
+end

@@ -1,0 +1,12 @@
+
+program test
+	var array[6..8] of integer a;
+begin
+	a[6] := 1;
+	a[7] := 2;
+	a[8] := 3;
+	
+	write(a[6]);
+	write(a[7]);
+	write(a[8])
+end

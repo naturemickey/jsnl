@@ -1,0 +1,11 @@
+
+program test
+	procedure proc(integer a, b; integer c);
+	begin
+		write(a);
+		write(b);
+		write(c)
+	end
+begin
+	proc(1, 2, 3)
+end

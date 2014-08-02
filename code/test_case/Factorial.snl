@@ -1,0 +1,19 @@
+
+program test
+	var integer res;
+	procedure factorial(integer n, r);
+	begin
+		r := 1;
+		factorial_recursion(n, r)
+	end
+	procedure factorial_recursion(integer n, r);
+	begin
+		if 1 < n then
+			r := r * n;
+			factorial_recursion(n - 1, r)
+		fi
+	end
+begin
+	factorial(10, res);
+	write(res)
+end

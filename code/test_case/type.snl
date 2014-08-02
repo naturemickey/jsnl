@@ -1,0 +1,28 @@
+
+program test
+	type 
+		int := integer;
+		array1to20 := array[1..20] of char;
+		recordtype1 := record
+			int a, b;
+			array1to20 c;
+		end;
+		recordtype2 := record
+			recordtype1 v;
+			char c;
+		end;
+	var recordtype2 v;
+		array1to20 v2;
+begin
+	v.v.a := 1;
+	write(v.v.a);
+	
+	v2[1] := 65;
+	write(v2[1]);
+	
+	v.v.c[1] := 68;
+	write(v.v.c[1]);
+
+	v.c := 'b';
+	write(v.c)
+end

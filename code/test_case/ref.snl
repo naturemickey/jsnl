@@ -1,0 +1,15 @@
+
+program test
+	var integer t;
+	procedure ref(integer n);
+		var integer i;
+	begin
+		i := n;
+		n := 3;
+		i := 1
+	end
+begin
+	t := 5;
+	ref(t);
+	write(t)
+end
